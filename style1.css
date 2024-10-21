@@ -1,0 +1,214 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+.ex {
+    margin-top: 10px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebar Layout */
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+    background-color: #0c4a6e;
+    color: white;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.main-content {
+    flex: 3;
+    min-width: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #e2e8f0;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.work-history, .education, .certifications {
+    margin-bottom: 30px;
+}
+
+.job, .degree {
+    margin-bottom: 15px;
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .sidebar {
+        padding: 30px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        margin-right: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Small screens (landscape phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .sidebar, .main-content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+}
+
+/* Tiny screens (very small devices) */
+@media (max-width: 348px) {
+    body {
+        padding: 8px;
+    }
+
+    .sidebar, .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p, li {
+        font-size: 12px;
+    }
+
+    ul {
+        margin-left: 10px;
+    }
+}
